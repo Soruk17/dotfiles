@@ -1,0 +1,5 @@
+require('options')
+require('keymaps')
+require('lazyvim')
+require('colorscheme')
+require('lsp')
