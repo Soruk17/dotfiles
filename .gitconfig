@@ -1,0 +1,5 @@
+[user]
+	name = seb
+	email = sebastianmihai.pantoc@proton.me
+[core]
+	excludesfile = /Users/seb/.gitignore
