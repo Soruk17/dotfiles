@@ -5,8 +5,7 @@
 #: kitty has very powerful font management. You can configure
 #: individual font faces and even specify special fonts for particular
 #: characters.
-
-font_family      0xProto Monospace # bold_font        auto
+# font_family      0xProto Monospace # bold_font        auto
 # italic_font      auto
 # bold_italic_font auto
 
@@ -2061,7 +2060,7 @@ cursor_shape block
 #: special value of ask means that kitty will ask before opening the
 #: link when clicked.
 
-shell_integration enabled no-cursor
+shell_integration enabled, no-cursor
 #: Enable shell integration on supported shells. This enables features
 #: such as jumping to previous prompts, browsing the output of the
 #: previous command in a pager, etc. on supported shells. Set to
@@ -2233,7 +2232,7 @@ shell_integration enabled no-cursor
 #: use the background color of the currently active window and finally
 #: you can use an arbitrary color, such as #12af59 or red.
 
-# macos_option_as_alt no
+macos_option_as_alt yes
 
 #: Use the Option key as an Alt key on macOS. With this set to no,
 #: kitty will use the macOS native Option+Key to enter Unicode
@@ -3150,12 +3149,12 @@ shell_integration enabled no-cursor
 
 
 # BEGIN_KITTY_THEME
-# Monokai
+# Default
 include current-theme.conf
 # END_KITTY_THEME
 
 # BEGIN_KITTY_FONTS
-font_family      family="0xProto Nerd Font Mono"
+font_family      family="Google Sans Code"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto

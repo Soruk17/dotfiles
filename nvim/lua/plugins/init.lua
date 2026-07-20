@@ -1,0 +1,7 @@
+require('plugins.blink')
+require('plugins.tree-sitter-manager')
+require('plugins.lsp-config')
+require('plugins.lazy-dev')
+require('plugins.blanklines')
+require('plugins.telescope')
+require('plugins.oil')
