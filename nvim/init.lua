@@ -1,5 +1,4 @@
-require('options')
+require('opt')
 require('keymaps')
-require('lazyvim')
-require('colorscheme')
-require('lsp')
+require('autocmds')
+require('plugins')

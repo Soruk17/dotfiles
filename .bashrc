@@ -4,6 +4,8 @@
 [[ $- == *i* ]] &&
   source -- ~/.local/share/blesh/ble.sh --attach=none --rcfile "$HOME/.config/.blerc"
 
+. ~/.config/.git-completion.bash
+
 set -o vi
 
 mkcd () {
@@ -34,12 +36,11 @@ reset=$(tput sgr0)
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias tommischiri='curl tommischiri.dev'
-PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; 
-PS1='\[\e[38;5;45;1m\][\w\[\e[22m\]]\[\e[0m\] \[\e[38;5;200m\]@\[\e[38;5;135m\]${PS1_CMD1}\n\[\e[0m\] \[\e[38;5;248;1;2m\]\$\[\e[0m\] '
-
+PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 "%s")';
+PS1='\[\e[38;5;47;1m\]\W\[\e[0m\]${PS1_CMD1:+ \[\e[38;5;248m\]on\[\e[0m\] \[\e[38;5;176m\] \[\e[38;5;206;1m\]${PS1_CMD1}}\n\[\e[0m\]\[\e[38;5;248;1;2m\]\$\[\e[0m\] '
 
 export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 source $HOME/.config/.git-prompt.sh
 
@@ -49,4 +50,6 @@ alias cl='clear'
 [[ ! ${BLE_VERSION-} ]] || ble-attach
 
 export PATH="$HOME/.local/bin:$PATH"
-export HYPRSHOT_DIR="$HOME/Pictures/Screenshots/"
+
+eval "$(~/.local/bin/mise activate bash)"
+
