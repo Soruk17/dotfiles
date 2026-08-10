@@ -1,0 +1,6 @@
+[tools]
+neovim = "nightly"
+[env]
+CARGO_HOME = "/Users/seb/.local/share/cargo"
+RUSTUP_HOME = "/Users/seb/.local/share/rustup"
+

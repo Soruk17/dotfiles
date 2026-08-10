@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#MISE dir="{{cwd}}"
+
+mise use rust
+mise use rust-analyzer
+cargo init
+mise tasks add run -- cargo run
+mise tasks add build -- cargo build
