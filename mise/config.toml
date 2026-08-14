@@ -1,6 +1,6 @@
 [tools]
-neovim = "nightly"
+neovim = "latest"
 [env]
-CARGO_HOME = "/Users/seb/.local/share/cargo"
-RUSTUP_HOME = "/Users/seb/.local/share/rustup"
+CARGO_HOME = "$HOME/.local/share/cargo"
+RUSTUP_HOME = "$HOME/.local/share/rustup"
 

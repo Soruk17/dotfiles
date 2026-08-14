@@ -51,5 +51,4 @@ alias cl='clear'
 
 export PATH="$HOME/.local/bin:$PATH"
 
-eval "$(~/.local/bin/mise activate bash)"
-
+eval "$(mise activate bash)"
