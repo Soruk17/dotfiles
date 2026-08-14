@@ -52,10 +52,6 @@
     "tree-sitter-manager.nvim": {
       "rev": "ae305699da5e97b6cffdd5cc6f6045b1b0bd26ea",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim"
-    },
-    "vim-racket": {
-      "rev": "2c7ec0f35a2ad1ca00305e5d67837bc1f1d4b6cc",
-      "src": "https://github.com/wlangstroth/vim-racket"
     }
   }
 }
